@@ -1,0 +1,114 @@
+{
+  "asphalt": {
+    "pixabay_id": 2313860,
+    "author": "ackgfx",
+    "page": "https://pixabay.com/photos/pavement-road-ground-asphalt-2313860/",
+    "tags": "pavement, road, ground, asphalt, transportation, highway, surface, pave, pattern, asphalting, gray road, gray pattern",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      853
+    ],
+    "crop": [
+      0.5,
+      0.5,
+      0.85
+    ]
+  },
+  "grass": {
+    "pixabay_id": 253616,
+    "author": "geralt",
+    "page": "https://pixabay.com/photos/lawn-grass-meadow-texture-yard-253616/",
+    "tags": "lawn, grass, meadow, texture, yard, garden, park, green, green grass, grassy, field",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      1280
+    ],
+    "crop": [
+      0.5,
+      0.5,
+      0.9
+    ]
+  },
+  "concrete": {
+    "pixabay_id": 1812348,
+    "author": "joaovinagre",
+    "page": "https://pixabay.com/photos/stone-floor-gray-outdoor-ground-1812348/",
+    "tags": "stone, floor, gray, outdoor, ground, texture, concrete, wall, nature, brown texture, brown wall, brown stone",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      720
+    ],
+    "crop": [
+      0.5,
+      0.5,
+      0.85
+    ]
+  },
+  "hedge": {
+    "pixabay_id": 1407727,
+    "author": "AS_Photography",
+    "page": "https://pixabay.com/photos/intensely-green-hornbeam-wallpaper-1407727/",
+    "tags": "intensely green hornbeam wallpaper, hornbeam, hedge, the background, green, texture, natural, the fence, wall, leaf, spring, trees, nature, abstract, model, plants, outside, red, garden, park, the structure of the, rural, leaves, ecology",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      853
+    ],
+    "crop": [
+      0.5,
+      0.5,
+      0.8
+    ]
+  },
+  "gravel": {
+    "pixabay_id": 3444870,
+    "author": "scholty1970",
+    "page": "https://pixabay.com/photos/stones-rocks-background-pattern-3444870/",
+    "tags": "stones, rocks, background, pattern, structure, texture, wallpaper",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      719
+    ],
+    "crop": [
+      0.5,
+      0.5,
+      0.8
+    ]
+  },
+  "bark_oak": {
+    "pixabay_id": 7384291,
+    "author": "eplv",
+    "page": "https://pixabay.com/photos/bark-tree-tree-bark-nature-7384291/",
+    "tags": "bark, tree, tree bark, nature, close up, macro",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      853
+    ],
+    "crop": [
+      0.5,
+      0.5,
+      0.75
+    ]
+  },
+  "bark_birch": {
+    "pixabay_id": 6935442,
+    "author": "Nennieinszweidrei",
+    "page": "https://pixabay.com/photos/birch-bark-sugar-birch-tree-bark-6935442/",
+    "tags": "birch bark, sugar birch, tree bark, bark, birch, structure, texture, tree",
+    "license": "Pixabay Content License",
+    "source_size": [
+      1280,
+      853
+    ],
+    "crop": [
+      0.35,
+      0.4,
+      0.55
+    ]
+  }
+}
