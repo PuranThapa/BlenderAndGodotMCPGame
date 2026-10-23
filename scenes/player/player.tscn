@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/bicycle_controller.gd" id="1_ctrl"]
+[ext_resource type="Script" path="res://scripts/player/bike_visual.gd" id="2_vis"]
+[ext_resource type="Script" path="res://scripts/player/third_person_rig.gd" id="3_rig"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule_body"]
+radius = 0.32
+height = 1.75
+
+[sub_resource type="SphereShape3D" id="Sphere_arm"]
+radius = 0.25
+
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 13
+script = ExtResource("1_ctrl")
+
+[node name="BodyShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.32, 0)
+shape = SubResource("Capsule_body")
+
+[node name="Visual" type="Node3D" parent="."]
+script = ExtResource("2_vis")
+
+[node name="FirstPersonCamera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.93969, 0.34202, 0, -0.34202, 0.93969, 0, 1.52, -0.06)
+fov = 80.0
+near = 0.05
+far = 600.0
+
+[node name="ThirdPersonRig" type="Node3D" parent="."]
+script = ExtResource("3_rig")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="ThirdPersonRig"]
+collision_mask = 1
+shape = SubResource("Sphere_arm")
+spring_length = 4.6
+margin = 0.2
+
+[node name="Camera3D" type="Camera3D" parent="ThirdPersonRig/SpringArm3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.6)
+fov = 70.0
+near = 0.05
+far = 600.0

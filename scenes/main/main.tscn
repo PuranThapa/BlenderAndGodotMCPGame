@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/systems/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/systems/morning_environment.gd" id="2_env"]
+[ext_resource type="Script" path="res://scripts/city/city_builder.gd" id="3_city"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="4_player"]
+[ext_resource type="Script" path="res://scripts/deliveries/delivery_manager.gd" id="5_mgr"]
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="6_hud"]
+[ext_resource type="Script" path="res://scripts/systems/living_city.gd" id="7_life"]
+[ext_resource type="Script" path="res://scripts/systems/audio.gd" id="8_audio"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="Audio" type="Node" parent="."]
+script = ExtResource("8_audio")
+
+[node name="MorningEnvironment" type="Node3D" parent="."]
+script = ExtResource("2_env")
+
+[node name="City" type="Node3D" parent="."]
+script = ExtResource("3_city")
+
+[node name="Player" parent="." instance=ExtResource("4_player")]
+
+[node name="DeliveryManager" type="Node" parent="."]
+script = ExtResource("5_mgr")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("6_hud")
+
+[node name="LivingCity" type="Node3D" parent="."]
+script = ExtResource("7_life")
